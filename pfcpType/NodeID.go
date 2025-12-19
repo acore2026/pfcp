@@ -1,6 +1,7 @@
 package pfcpType
 
 import (
+	"context"
 	"errors"
 	"fmt"
 	"net"
@@ -109,7 +110,7 @@ func (n *NodeID) ResolveNodeIdToIp() net.IP {
 	case NodeIdTypeIpv4Address, NodeIdTypeIpv6Address:
 		return n.IP
 	case NodeIdTypeFqdn:
-		if ns, err := net.LookupHost(n.FQDN); err != nil {
+		if ns, err := net.DefaultResolver.LookupHost(context.Background(), n.FQDN); err != nil {
 			logger.PFCPLog.Warnf("Host lookup failed: %+v", err)
 			return net.IPv4zero
 		} else {
