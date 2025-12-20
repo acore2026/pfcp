@@ -1,9 +1,9 @@
 module github.com/free5gc/pfcp
 
-go 1.24
+go 1.25.5
 
 require (
-	github.com/free5gc/tlv v1.0.3-0.20241204153300-1005a019612d
+	github.com/free5gc/tlv v1.1.0
 	github.com/sirupsen/logrus v1.8.3
 	github.com/stretchr/testify v1.8.3
 	github.com/tim-ywliu/nested-logrus-formatter v1.3.2
