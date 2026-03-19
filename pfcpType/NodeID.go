@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/free5gc/pfcp/logger"
+	"github.com/acore2026/pfcp/logger"
 )
 
 const (

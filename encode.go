@@ -3,7 +3,7 @@ package pfcp
 import (
 	"fmt"
 
-	"github.com/free5gc/tlv"
+	"github.com/acore2026/tlv"
 )
 
 func (m *Message) Marshal() ([]byte, error) {

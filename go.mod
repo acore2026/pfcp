@@ -1,9 +1,9 @@
-module github.com/free5gc/pfcp
+module github.com/acore2026/pfcp
 
 go 1.25.5
 
 require (
-	github.com/free5gc/tlv v1.1.0
+	github.com/acore2026/tlv v1.1.0
 	github.com/sirupsen/logrus v1.8.3
 	github.com/stretchr/testify v1.8.3
 	github.com/tim-ywliu/nested-logrus-formatter v1.3.2
